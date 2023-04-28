@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 *,
 *:after,
 *::before {
@@ -17,4 +19,5 @@ $text-color: var(--tg-theme-text-color);
 body {
     background-color: $bg-color;
     color: $text-color;
+    font-family: $ubuntu;
 }

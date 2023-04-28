@@ -1,15 +1,16 @@
-// import styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
-export const Header = () => {
+import logo from '../../assets/images/logo.png'
+
+export const Header = (closeHandler) => {
     return (
-        <header>
-            <nav>
-                <ul>
-                    <li>hi</li>
-                    <li>telegram</li>
-                    <li>bot</li>
-                </ul>
-            </nav>
+        <header
+            className={styles.Header}
+            style={{
+                background: `url(${logo}) #001065 no-repeat center / contain`,
+            }}
+        >
+            <div className={styles.close} onClick={closeHandler} />
         </header>
     )
 }

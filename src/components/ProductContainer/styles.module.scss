@@ -1,9 +1,8 @@
 .ProductContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-
+    row-gap: 20px;
     width: 100%;
 }
