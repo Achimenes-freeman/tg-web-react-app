@@ -1,0 +1,15 @@
+*,
+*:after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$bg-color: var(--tg-theme-bg-color);
+$text-color: var(--tg-theme-text-color);
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+}
