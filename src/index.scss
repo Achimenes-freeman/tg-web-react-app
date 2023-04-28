@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
 $bg-color: var(--tg-theme-bg-color);
 $text-color: var(--tg-theme-text-color);
 

@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
 import { Layout } from './components/Layout/Layout'
-import { Homepage } from './components/Homepage/Homepage'
+import { Homepage } from './pages/Homepage/Homepage'
 const tg = window.Telegram.WebApp
 
 export function App() {
@@ -15,7 +15,7 @@ export function App() {
 
     return (
         <div className="App">
-            <button onClick={onClose}></button>
+            <button onClick={onClose}>close</button>
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route path="/" element={<Homepage />} />
