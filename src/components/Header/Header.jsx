@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 
 import logo from '../../assets/images/logo.png'
 
-export const Header = (closeHandler) => {
+export const Header = ({ closeHandler }) => {
     return (
         <header
             className={styles.Header}
