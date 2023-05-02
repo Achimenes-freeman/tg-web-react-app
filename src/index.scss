@@ -13,11 +13,13 @@ ol {
     list-style: none;
 }
 
-$bg-color: var(--tg-theme-bg-color);
-$text-color: var(--tg-theme-text-color);
+html {
+    font-size: 16px;
+}
 
 body {
     background-color: $bg-color;
     color: $text-color;
-    font-family: $ubuntu;
+    font-family: $sofia;
+    color: rgb(248, 248, 248);
 }
