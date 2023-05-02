@@ -5,7 +5,7 @@ export const ProductCard = ({ title, price, thumbnail }) => {
         <div className={styles.ProductCard}>
             <div className={styles.picture}>
                 <img className={styles.image} src={thumbnail} alt={title} />
-                <div className={styles.mask}></div>
+                {/* <div className={styles.mask}></div> */}
             </div>
             <div className={styles.content}>
                 <h3 className={styles.title}>{title}</h3>
