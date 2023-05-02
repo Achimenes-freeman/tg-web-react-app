@@ -8,7 +8,9 @@ export const ProductCard = ({ title, price, thumbnail }) => {
                 <div className={styles.mask}></div>
             </div>
             <div className={styles.content}>
-                <h3 className={styles.title}>{title}</h3>
+                <h3 className={styles.title} lang="ru">
+                    {title}
+                </h3>
                 <div className={styles.priceBox}>
                     <p className={styles.price}>
                         {price}

@@ -3,13 +3,21 @@
 .ProductCard {
     position: relative;
     width: 100%;
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 0.66;
 
     background-color: $bg-color;
 
-    border-radius: 8px;
+    border-radius: calc(8px + (16 - 8) * ((100vw - 320px) / (1280 - 320)));
 
     overflow: hidden;
+
+    @media (min-width: 768px) {
+        aspect-ratio: 1.66;
+    }
+
+    @media (min-width: 1280px) {
+        border-radius: 16px;
+    }
 }
 .picture {
     position: absolute;
@@ -27,8 +35,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000;
-    opacity: 0.3;
+    background: rgb(83, 83, 83);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.3) 70%,
+        rgba(0, 0, 0, 0.6) 90%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    // opacity: 0.6;
 }
 
 .image {
@@ -40,7 +55,6 @@
 
 .content {
     position: relative;
-
     display: flex;
     align-items: flex-end;
     width: 100%;
@@ -48,7 +62,22 @@
 
     padding: 10px 6px;
 
-    color: $text-color;
+    font-size: 1.2rem;
+
+    color: #f7f7f7;
+}
+
+.title {
+    hyphens: auto;
+    width: 100%;
+
+    line-height: 0.9;
+
+    font-size: calc(16px + (80 - 16) * ((100vw - 320px) / (1280 - 320)));
+
+    @media (min-width: 1281px) {
+        font-size: 5rem;
+    }
 }
 
 .priceBox {
@@ -64,7 +93,7 @@
 
 .price {
     font-weight: 700;
-    color: #000;
+    color: #242424;
 }
 
 .currency {
