@@ -1,7 +1,9 @@
 .ProductsNav {
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
+
     margin-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (768 - 320)));
+    padding: 0 30px;
 
     &::-webkit-scrollbar {
         height: 0;
