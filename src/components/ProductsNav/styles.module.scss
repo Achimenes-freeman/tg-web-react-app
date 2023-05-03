@@ -5,10 +5,10 @@
     margin-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (768 - 320)));
     padding: 0 30px;
 
-    &::-webkit-scrollbar {
-        height: 0;
-        width: 0;
-    }
+    // &::-webkit-scrollbar {
+    //     height: 0;
+    //     width: 0;
+    // }
 
     @media (min-width: 768px) {
         margin-bottom: 60px;
