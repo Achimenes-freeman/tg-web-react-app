@@ -1,0 +1,25 @@
+.NavButton {
+    padding: 0.4em 0.8em;
+    margin-right: 10px;
+
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 5em;
+
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1280 - 320)));
+
+    cursor: pointer;
+
+    &:first-child {
+        margin-left: 30px;
+    }
+
+    @media (min-width: 1281px) {
+        font-size: 1.25rem;
+    }
+}
+
+.active {
+    background-color: #383838;
+    color: #fff;
+}

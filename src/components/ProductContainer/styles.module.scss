@@ -2,14 +2,17 @@
     display: grid;
     justify-self: stretch;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: calc(10px + (40 - 10) * ((100vw - 320px) / (1280 - 320)));
-    row-gap: calc(20px + (60 - 20) * ((100vw - 320px) / (1280 - 320)));
+    column-gap: calc(10px + (20 - 10) * ((100vw - 320px) / (768 - 320)));
+    row-gap: calc(20px + (40 - 20) * ((100vw - 320px) / (768 - 320)));
 
+    padding: 0 15px;
     width: 100%;
 
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     @media (min-width: 1281px) {
-        max-width: 1280px;
-        margin: 0 auto;
         column-gap: 40px;
         row-gap: 60px;
     }

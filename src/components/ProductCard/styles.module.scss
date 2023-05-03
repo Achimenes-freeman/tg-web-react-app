@@ -11,9 +11,9 @@
 
     overflow: hidden;
 
-    @media (min-width: 768px) {
-        aspect-ratio: 1.66;
-    }
+    // @media (min-width: 768px) {
+    //     aspect-ratio: 1.66;
+    // }
 
     @media (min-width: 1280px) {
         border-radius: 16px;
@@ -62,8 +62,6 @@
 
     padding: 10px 6px;
 
-    font-size: 1.2rem;
-
     color: #f7f7f7;
 }
 
@@ -73,27 +71,38 @@
 
     line-height: 0.9;
 
-    font-size: calc(16px + (80 - 16) * ((100vw - 320px) / (1280 - 320)));
+    font-size: calc(16px + (70 - 16) * ((100vw - 320px) / (1280 - 320)));
 
     @media (min-width: 1281px) {
-        font-size: 5rem;
+        font-size: 4.375rem;
     }
 }
 
 .priceBox {
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: calc(5px + (10 - 5) * ((100vw - 320px) / (1280 - 320)));
+    right: calc(5px + (10 - 5) * ((100vw - 320px) / (1280 - 320)));
 
     padding: 5px 10px;
     border-radius: 50px;
 
     background-color: #fff;
+
+    @media (min-width: 1281px) {
+        top: 16px;
+        right: 16px;
+    }
 }
 
 .price {
     font-weight: 700;
     color: #242424;
+
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1280 - 320)));
+
+    @media (min-width: 1281px) {
+        font-size: 1.25rem;
+    }
 }
 
 .currency {
